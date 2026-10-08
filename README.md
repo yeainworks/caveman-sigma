@@ -54,7 +54,7 @@ Covers system prompt triage (keep / rewrite / delete / move), tool-definition of
 ## Install
 
 ```bash
-git clone https://github.com/<you>/caveman-sigma.git
+git clone https://github.com/yeainworks/caveman-sigma.git
 cd caveman-sigma
 ./install.sh
 ```
@@ -134,7 +134,7 @@ Terse-output idea from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/
 Установка:
 
 ```bash
-git clone https://github.com/<you>/caveman-sigma.git && cd caveman-sigma && ./install.sh
+git clone https://github.com/yeainworks/caveman-sigma.git && cd caveman-sigma && ./install.sh
 ```
 
 Запуск: `/caveman-sigma [lite|full|ultra]`. Выключить: «stop caveman». Качество — нижняя граница, экономия — переменная: краткость касается того, что агент *говорит*, а не того, насколько тщательно он *работает*.
