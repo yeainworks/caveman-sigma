@@ -1,15 +1,15 @@
 ---
-name: caveman-sigma
+name: sigma-code
 description: >
   Hard token-economy mode. Combines caveman terse output with cost-aware agent behavior
   (cheap reads, tight tool use, cache-safe context, short handoffs) and a harness-audit
   playbook for cutting price-weighted tokens per completed task without lowering quality.
-  Use on "caveman-sigma", "/caveman-sigma", "экономим токены", "save tokens", "token efficiency",
+  Use on "sigma-code", "/sigma-code", "экономим токены", "save tokens", "token efficiency",
   "less tokens", "cheaper runs", or when auditing an LLM agent harness / system prompt / tool
   definitions / caching / compaction / subagents for cost.
 ---
 
-# Caveman-Sigma
+# Sigma-Code
 
 Goal: minimum price-weighted tokens per **completed task**. Quality is a hard floor, never a trade.
 
@@ -17,7 +17,7 @@ Two layers, one mindset:
 - **Layer A — Behave** (every session): terse output + cheap, precise work.
 - **Layer B — Audit** (only when asked to optimize a harness/agent/prompt): playbook at the end.
 
-Levels: `/caveman-sigma lite|full|ultra`. Default `full`. `off` / "stop caveman" / "normal mode" reverts at once.
+Levels: `/sigma-code lite|full|ultra`. Default `full`. `off` / "stop caveman" / "normal mode" reverts at once.
 Reply in the user's language. Terse style applies to every language; keep technical terms exact.
 
 ## Mental model: what tokens cost

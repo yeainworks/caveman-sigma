@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🗿 caveman-sigma
+# 🗿 sigma-code
 
 **Cut the token bill per task, not just the word count.**
 
@@ -22,7 +22,7 @@ Quality is the floor. Tokens are the variable.
 - one giant file read or log dump is re-billed on every later turn;
 - a trick that shrinks each message but adds turns can cost *more*.
 
-Terse style alone optimizes the cheapest part. `caveman-sigma` optimizes the whole task.
+Terse style alone optimizes the cheapest part. `sigma-code` optimizes the whole task.
 
 ## What it does
 
@@ -54,22 +54,22 @@ Covers system prompt triage (keep / rewrite / delete / move), tool-definition of
 ## Install
 
 ```bash
-git clone https://github.com/yeainworks/caveman-sigma.git
-cd caveman-sigma
+git clone https://github.com/yeainworks/sigma-code.git
+cd sigma-code
 ./install.sh
 ```
 
-The script symlinks `skills/caveman-sigma` into `~/.claude/skills/`. Restart Claude Code, then:
+The script symlinks `skills/sigma-code` into `~/.claude/skills/`. Restart Claude Code, then:
 
 ```
-/caveman-sigma          # full level
-/caveman-sigma ultra    # most compressed
-/caveman-sigma lite     # light trim
+/sigma-code          # full level
+/sigma-code ultra    # most compressed
+/sigma-code lite     # light trim
 ```
 
 Stop with `stop caveman` or `normal mode`.
 
-Manual install: copy `skills/caveman-sigma/` into `~/.claude/skills/` (user-wide) or `.claude/skills/` (per project).
+Manual install: copy `skills/sigma-code/` into `~/.claude/skills/` (user-wide) or `.claude/skills/` (per project).
 
 ## Levels
 
@@ -92,7 +92,7 @@ Example:
 Ask for it in plain words:
 
 ```
-Use caveman-sigma to audit this agent harness for token cost.
+Use sigma-code to audit this agent harness for token cost.
 ```
 
 You get a harness map, cost share by source × billing type, a ranked list of changes (with estimated savings, risk, validation and rollback), a system-prompt diff with a reason per line, a test plan for flagged changes, and a list of gaps.
@@ -129,12 +129,12 @@ Terse-output idea from [JuliusBrussee/caveman](https://github.com/JuliusBrussee/
 
 ## По-русски
 
-**caveman-sigma** — скилл для Claude Code: краткий «пещерный» стиль ответов + привычки, которые снижают стоимость **всей задачи** (дешёвое чтение, параллельные вызовы, большой вывод в файл, стабильный кэш, короткие handoff от субагентов) + плейбук аудита агентного харнесса.
+**sigma-code** — скилл для Claude Code: краткий «пещерный» стиль ответов + привычки, которые снижают стоимость **всей задачи** (дешёвое чтение, параллельные вызовы, большой вывод в файл, стабильный кэш, короткие handoff от субагентов) + плейбук аудита агентного харнесса.
 
 Установка:
 
 ```bash
-git clone https://github.com/yeainworks/caveman-sigma.git && cd caveman-sigma && ./install.sh
+git clone https://github.com/yeainworks/sigma-code.git && cd sigma-code && ./install.sh
 ```
 
-Запуск: `/caveman-sigma [lite|full|ultra]`. Выключить: «stop caveman». Качество — нижняя граница, экономия — переменная: краткость касается того, что агент *говорит*, а не того, насколько тщательно он *работает*.
+Запуск: `/sigma-code [lite|full|ultra]`. Выключить: «stop caveman». Качество — нижняя граница, экономия — переменная: краткость касается того, что агент *говорит*, а не того, насколько тщательно он *работает*.
